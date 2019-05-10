@@ -1,25 +1,23 @@
 public class Math {
 
-    void isEven(int a){
+    boolean isEven(int a){
         boolean x = (a % 2 == 0);
-        System.out.println("czy " + a + " jest parzysta?");
-        System.out.println(x);
+        return x;
 
     }
 
-    void isOdd(int a){
+    boolean isOdd(int a){
         boolean x = (a % 2 != 0);
-        System.out.println("czy " + a + " jest nieparzysta?");
-        System.out.println(x);
+        return x;
 
     }
-    void circleField(double r){
+    double circleField(double r){
         double p = r * r * 3.14;
-        System.out.println("Pole koła równa się: " + p);
+        return p;
     }
-void power(int x){
+int power(int x){
         int wynik = x*x;
-    System.out.println(x + " do kwadratu równa się: " + wynik);
+    return wynik;
 }
 
 }
